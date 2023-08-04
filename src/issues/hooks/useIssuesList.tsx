@@ -31,7 +31,6 @@ function useIssuesList({ state, labels }: Props) {
   useEffect(() => {
     setPage(1);
   }, [state, labels]);
-
   const nextPage = () => {
     if (issuesQuery.data?.length === 0) return;
     setPage(page + 1);
